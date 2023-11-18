@@ -1,7 +1,7 @@
 {
-  "name": "@lc-cn/ts-dev-template",
+  "name": "nodeorm",
   "version": "1.0.0",
-  "description": "ts开发环境配置",
+  "description": "Node.JS ORM",
   "main": "lib/index.js",
   "scripts": {
     "start": "node .",
@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lc-cn/ts-dev-template.git"
+    "url": "git+https://github.com/liulyxandy-codemao/nodeorm.git"
   },
   "keywords": [
     "ts",
     "dev",
     "template"
   ],
-  "author": "凉菜",
+  "author": "liulyxandy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lc-cn/ts-dev-template/issues"
+    "url": "https://github.com/liulyxandy-codemao/nodeorm/issues"
   },
-  "homepage": "https://github.com/lc-cn/ts-dev-template#readme",
+  "homepage": "http://liulyxandy.cn/",
   "devDependencies": {
     "@types/node": "latest",
     "dtsc": "^2.2.3",
