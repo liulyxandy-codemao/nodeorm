@@ -40,5 +40,8 @@
     "/lib/**/*.d.ts",
     "/lib/**/LICENSE"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@types/mysql": "^2.15.25",
+    "mysql": "^2.18.1"
+  }
 }
