@@ -31,8 +31,9 @@ class BaseQuery {
         return this;
     }
 
-    public where(where: string) {
-        this._where = where;
+    public where(key:string, condition: string, value: any) {
+        if(this._where) this._where += ` AND ${key} ${condition} ${value}`;
+        else this._where = `${key} ${condition} ${value}`;
         return this;
     }
 
@@ -134,7 +135,7 @@ _     * 当前默认数据库
     }
 
     /** 连接数据库 */
-    public connect(name: string = this.default) {
+    public connect(name: string = this.default): Promise<BaseQuery> {
         const connection = mysql.createConnection({
             host: this.config.connections[name].host,
             user: this.config.connections[name].username,
@@ -142,9 +143,12 @@ _     * 当前默认数据库
             database: this.config.connections[name].database,
             port: this.config.connections[name].hostport
         })
-        connection.connect((err)=>{
-            if(err) throw err;
-            return new BaseQuery(connection);
-        });
+        return new Promise((resolve, reject) => {
+            connection.connect((err) => {
+                if(err) reject(err);
+                resolve(new BaseQuery(connection));
+            })
+        })
+
     }
 }
