@@ -1,2 +1,2 @@
-# nodeorm
+# @liulyxandy/nodeorm
 Node.JS ORM
