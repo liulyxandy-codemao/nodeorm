@@ -118,13 +118,13 @@ class BaseQuery {
 export class DatabaseORM {
     /**
      * @protected
-_     * 数据库信息
+     * 数据库信息
      */
     protected config: ORMConfig;
 
     /**
      * @protected
-_     * 当前默认数据库
+     * 当前默认数据库
      */
     protected default: string;
 
