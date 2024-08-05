@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liulyxandy-codemao/@liulyxandy/nodeorm.git"
+    "url": "git+https://github.com/liulyxandy-codemao/nodeorm.git"
   },
   "keywords": [
     "ts",
@@ -24,7 +24,7 @@
   "author": "liulyxandy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liulyxandy-codemao/@liulyxandy/nodeorm/issues"
+    "url": "https://github.com/liulyxandy-codemao/nodeorm/issues"
   },
   "homepage": "http://liulyxandy.cn/",
   "devDependencies": {
